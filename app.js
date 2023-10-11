@@ -1,6 +1,13 @@
-function a(){
-  console.log(this)
+// function a(){
+//   console.log(this)
+// }
+
+// a()
+
+function a(callback){
+  return callback()
 }
 
-a()
-
+console.log(a(function(){
+  console.log(this);
+}))
