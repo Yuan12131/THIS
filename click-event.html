@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <button id="button-click">click!</button>
+  </div>
+
+  <script>
+    const buttonClick = document.getElementById("button-click");
+    buttonClick.addEventListener('click', () => {
+      console.log("클릭했다!")
+    })
+  </script>
+</body>
+</html>
